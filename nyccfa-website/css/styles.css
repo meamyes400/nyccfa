@@ -1714,16 +1714,18 @@ textarea.form-control {
 
   .navbar-links {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 72px;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: calc(100vh - 72px);
     background: var(--white);
     flex-direction: column;
     padding: 24px;
-    gap: 8px;
+    gap: 4px;
     z-index: 999;
+    overflow-y: auto;
+    border-top: 1px solid var(--gray-100);
   }
 
   .navbar-links.open {
@@ -1731,8 +1733,15 @@ textarea.form-control {
   }
 
   .navbar-links a {
-    padding: 14px 18px;
+    padding: 16px 18px;
     font-size: 1.0625rem;
+    border-radius: var(--radius);
+    width: 100%;
+  }
+
+  .navbar-links a:hover,
+  .navbar-links a.active {
+    background: var(--gray-50);
   }
 
   .navbar-cta {
