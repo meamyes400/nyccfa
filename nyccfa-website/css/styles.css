@@ -452,7 +452,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-xl);
   padding: 40px 48px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
@@ -1671,12 +1671,8 @@ textarea.form-control {
   }
 
   .stats-bar-inner {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 32px;
-  }
-
-  .stat-item:nth-child(2)::after {
-    display: none;
   }
 
   .features-grid,
@@ -1756,13 +1752,9 @@ textarea.form-control {
   }
 
   .stats-bar-inner {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     padding: 24px;
-  }
-
-  .stat-item::after {
-    display: none !important;
   }
 
   .stat-number {
